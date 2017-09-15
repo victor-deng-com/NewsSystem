@@ -43,7 +43,23 @@ namespace Itcast.CMS.DAL
                     return cmd.ExecuteNonQuery();
                 }
             }
+        }
 
+        public static object ExecuteScalare(string sql, CommandType type, params SqlParameter[] pars)
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.CommandType = type;
+                    if (pars != null)
+                    {
+                        cmd.Parameters.AddRange(pars);
+                    }
+                    conn.Open();
+                    return cmd.ExecuteScalar();
+                }
+            }
         }
     }
 }
