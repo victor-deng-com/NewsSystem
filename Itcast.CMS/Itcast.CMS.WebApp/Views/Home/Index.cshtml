@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>新闻首页</title>
+    <link href="~/Content/themes/default/easyui.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.easyui.min.js"></script>
+    <script src="~/Scripts/easyui-lang-zh_CN.js"></script>
+</head>
+<body class="easyui-layout">
+    <!------------------顶部布局-------------->
+    <div region="north" border="false" style="height:65px;background:#B3DFDA; overflow:hidden;background-image:url('/Content/Images/bg3.png')">
+        <img src="/Content/Images/logo.gif" />
+    </div>
+    <!------------------顶部布局结束-------------->
+    <!------------------左边布局-------------->
+    <div region="west" split="true" title="West" style="width:150px;padding:2px;">
+        <div id="aa" class="easyui-accordion" style="width:auto;height:auto;">
+            <div title="新闻管理" iconCls="icon-ok" style="overflow:auto;padding:10px;">
+                <a href="javascript:void(0)">新闻管理</a>
+            </div>
+            <div title="评论管理" iconCls="icon-reload" selected="true" style="padding:10px;">
+                <a href="javascript:void(0)">评论管理</a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!------------------左边布局结束-------------->
+    <!-----------------底部布局-------------->
+    <div region="south" border="false" style="height:30px;background:#A9FACD;padding:10px; text-align:center">版权  &copy;  Itcast</div>
+    <!-----------------底部布局结束-------------->
+
+    <div region="center" title="Main Title">
+    </div>
+</body>
+</html>

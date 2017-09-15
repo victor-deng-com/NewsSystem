@@ -1,0 +1,4 @@
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.Model\bin\Debug\Itcast.CMS.Model.dll
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.Model\bin\Debug\Itcast.CMS.Model.pdb
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.Model\obj\Debug\Itcast.CMS.Model.dll
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.Model\obj\Debug\Itcast.CMS.Model.pdb

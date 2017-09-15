@@ -1,0 +1,5 @@
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.Common\bin\Debug\Itcast.CMS.Common.dll
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.Common\bin\Debug\Itcast.CMS.Common.pdb
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.Common\obj\Debug\Itcast.CMS.Common.dll
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.Common\obj\Debug\Itcast.CMS.Common.pdb
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.Common\obj\Debug\Itcast.CMS.Common.csprojResolveAssemblyReference.cache

@@ -1,0 +1,7 @@
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.DAL\bin\Debug\Itcast.CMS.DAL.dll
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.DAL\bin\Debug\Itcast.CMS.DAL.pdb
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.DAL\bin\Debug\Itcast.CMS.Model.dll
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.DAL\bin\Debug\Itcast.CMS.Model.pdb
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.DAL\obj\Debug\Itcast.CMS.DAL.csprojResolveAssemblyReference.cache
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.DAL\obj\Debug\Itcast.CMS.DAL.dll
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.DAL\obj\Debug\Itcast.CMS.DAL.pdb
