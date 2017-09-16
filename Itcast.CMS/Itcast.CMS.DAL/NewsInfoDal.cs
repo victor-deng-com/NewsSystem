@@ -10,7 +10,7 @@ namespace Itcast.CMS.DAL
 {
     public class NewsInfoDal
     {
-        public List<NewsInfo> GetPageList(int start,int end)
+        public List<NewsInfo> GetPageList(int start, int end)
         {
             string sql = "select * from (select row_number() over (order by id) as num,* from T_News) as t where t.num >= @start and t.num <= @end";
             SqlParameter[] pars = {
@@ -19,15 +19,16 @@ namespace Itcast.CMS.DAL
             };
             pars[0].Value = start;
             pars[1].Value = end;
-            DataTable da = SqlHelper.GetTable(sql,CommandType.Text,pars);
+            DataTable da = SqlHelper.GetTable(sql, CommandType.Text, pars);
             List<NewsInfo> list = null;
-            if (da.Rows.Count>0) {
+            if (da.Rows.Count > 0)
+            {
                 list = new List<NewsInfo>();
                 NewsInfo newsInfo = null;
                 foreach (DataRow row in da.Rows)
                 {
                     newsInfo = new NewsInfo();
-                    LoadEntity(row,newsInfo);
+                    LoadEntity(row, newsInfo);
                     list.Add(newsInfo);
                 }
             }
@@ -60,20 +61,39 @@ namespace Itcast.CMS.DAL
                                  };
             pars[0].Value = id;
             DataTable da = SqlHelper.GetTable(sql, CommandType.Text, pars);
-            NewsInfo newInfo = null;
+            NewsInfo newsInfo = null;
             if (da.Rows.Count > 0)
             {
-                newInfo = new NewsInfo();
-                LoadEntity(da.Rows[0], newInfo);
+                newsInfo = new NewsInfo();
+                LoadEntity(da.Rows[0], newsInfo);
             }
-            return newInfo;
+            return newsInfo;
         }
 
         //删除一条记录
         public int DeleteInfo(int id)
         {
             string sql = "delete from T_News where id=@id";
-            return SqlHelper.ExecuteNonquery(sql,CommandType.Text,new SqlParameter("@id",id));
+            return SqlHelper.ExecuteNonquery(sql, CommandType.Text, new SqlParameter("@id", id));
+        }
+
+        //增加一条记录
+        public int AddInfo(NewsInfo newsInfo)
+        {
+            string sql = "insert into T_News(Author,Title,Msg,ImagePath,SubDateTime) values(@Author,@Title,@Msg,@ImagePath,@SubDateTime)";
+            SqlParameter[] pars = {
+                new SqlParameter("@Author",SqlDbType.NVarChar,32),
+                new SqlParameter("@Title",SqlDbType.NVarChar,32),
+                new SqlParameter("@Msg",SqlDbType.NVarChar),
+                new SqlParameter("@ImagePath",SqlDbType.NVarChar,100),
+                new SqlParameter("@SubDateTime",SqlDbType.DateTime)
+            };
+            pars[0].Value = newsInfo.Author;
+            pars[1].Value = newsInfo.Title;
+            pars[2].Value = newsInfo.Msg;
+            pars[3].Value = newsInfo.ImagePath;
+            pars[4].Value = newsInfo.SubDateTime;
+            return SqlHelper.ExecuteNonquery(sql, CommandType.Text, pars);
         }
 
     }

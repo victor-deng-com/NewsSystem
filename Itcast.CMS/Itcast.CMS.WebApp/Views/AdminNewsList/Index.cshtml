@@ -43,9 +43,9 @@
                 collapsible: true,
                 title: "添加新闻",
                 width: 700,
-                height: 400,
+                height: 500,
                 buttons: [{
-                    text: '确定',
+                    text: '添加',
                     iconCls: 'icon-ok',
                     handler: function () {
                         //调用子窗体中的方法.
@@ -59,6 +59,11 @@
                     }
                 }]
             });
+        }
+
+        //添加完成以后调用该方法关闭添加窗口
+        function afterAdd() {
+            $('#divAdd').dialog('close');
         }
 
         //删除新闻
@@ -97,7 +102,7 @@
                 $("#title").text(data.Title);
                 $("#author").text(data.Author);
                 $("#subDateTime").text(ChangeDateFormat(data.SubDateTime));
-                $("#msg").text(data.Msg);
+                $("#msg").html(data.Msg);
             });
             $("#detailDiv").css("display", "block");
             $('#detailDiv').dialog({
@@ -126,7 +131,7 @@
         //将序列化成json格式后日期(毫秒数)转成日期格式
         function ChangeDateFormat(cellval) {
             var date = new Date(parseInt(cellval.replace("/Date(", "").replace(")/", ""), 10));
-            var month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
+            var month = (date.getMonth() + 1) < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
             var currentDate = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
             return date.getFullYear() + "-" + month + "-" + currentDate;
         }

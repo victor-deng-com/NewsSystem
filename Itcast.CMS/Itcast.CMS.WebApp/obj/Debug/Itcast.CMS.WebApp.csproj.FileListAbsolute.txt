@@ -107,3 +107,4 @@ D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.
 D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.WebApp\obj\Debug\Itcast.CMS.WebApp.csprojResolveAssemblyReference.cache
 D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.WebApp\obj\Debug\Itcast.CMS.WebApp.dll
 D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.WebApp\obj\Debug\Itcast.CMS.WebApp.pdb
+D:\workspace\visual studio\Projects\Github_private\NewsSystem\Itcast.CMS\Itcast.CMS.WebApp\bin\LitJSON.dll

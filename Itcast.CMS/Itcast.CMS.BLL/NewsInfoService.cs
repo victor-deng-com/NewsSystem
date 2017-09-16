@@ -35,5 +35,10 @@ namespace Itcast.CMS.BLL
             return NewsInfoDal.DeleteInfo(id)>0;
         }
 
+        public bool AddInfo(NewsInfo newsInfo)
+        {
+            return NewsInfoDal.AddInfo(newsInfo) > 0;
+        }
+
     }
 }
